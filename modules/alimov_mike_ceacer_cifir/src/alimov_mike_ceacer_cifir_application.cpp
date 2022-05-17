@@ -34,7 +34,7 @@ std::string Application::operator()(int argc, const char** argv) {
     }
 
     CaesarCipher bs;
-    result = bs.encrypt(std::to_string(char(stro)), 2);
+    result = bs.encrypt(std::to_string(static_cast<char>(stro)), 2);
 
     std::ostringstream oss;
     oss << result;
