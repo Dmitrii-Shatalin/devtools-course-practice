@@ -14,4 +14,4 @@ class Application {
     std::string operator()(int argc, const char** argv);
 };
 
-#endif  // MODULES_ALIMOV_MIKE_CEACER_CIFIR_INCLUDE_ALIMOV_MIKE_CEACER_CIFIR_APPLICATION_H_ 
+#endif  // MODULES_ALIMOV_MIKE_CEACER_CIFIR_INCLUDE_ALIMOV_MIKE_CEACER_CIFIR_APPLICATION_H_
