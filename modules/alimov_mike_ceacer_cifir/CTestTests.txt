@@ -61,4 +61,3 @@ add_test(NAME ${prefix}_Сan_Check_Wrong_Arguments
 set_tests_properties (${prefix}_Сan_Check_Wrong_Arguments PROPERTIES
     PASS_REGULAR_EXPRESSION "Error occured: Wrong argument type."
     LABELS "${MODULE}")
-
