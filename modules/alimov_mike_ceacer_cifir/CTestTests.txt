@@ -50,3 +50,16 @@ add_test(NAME ${prefix}_run_with_right_and_wrong_arguments
 set_tests_properties(${prefix}_run_with_right_and_wrong_arguments PROPERTIES
     PASS_REGULAR_EXPRESSION "3"
     LABELS "${MODULE}")
+
+add_test(NAME ${prefix_Сan_Check_3_Arguments 
+    COMMAND ${APPLICATION} 1 1 1)
+set_tests_properties (${prefix}_Сan_Check_3_Arguments PROPERTIES
+    PASS_REGULAR_EXPRESSION "Error occured: "
+    LABELS "${MODULE}") 
+
+add_test(NAME ${prefix_Сan_Check_Wrong_Arguments 
+    COMMAND ${APPLICATION} d)
+set_tests_properties (${prefix}_Сan_Check_Wrong_Arguments PROPERTIES
+    PASS_REGULAR_EXPRESSION "Error occured: Wrong argument type."
+    LABELS "${MODULE}")
+
